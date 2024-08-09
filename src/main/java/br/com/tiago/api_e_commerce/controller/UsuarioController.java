@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.tiago.api_e_commerce.dto.UsuarioDTO;
 import jakarta.annotation.PostConstruct;
 
+
 @RestController
 @RequestMapping("/usuario")
 public class UsuarioController {
-    // Lista temporária
+    
     public  static List<UsuarioDTO> usuario = new  ArrayList<>();
 
     @PostConstruct
